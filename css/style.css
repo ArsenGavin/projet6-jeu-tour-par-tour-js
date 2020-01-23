@@ -1,0 +1,239 @@
+body {
+  background-image: url("../src/350.jpg");
+  background-size: cover;
+
+}
+
+body *{
+  box-sizing: border-box;
+}
+
+.background {
+  width: 100%;
+}
+
+p {
+  color: gold;
+  background-color: #00000080;
+  border-radius: 50%;
+  text-align: center;
+}
+
+#map {
+  width: 463px;
+  height: 463px;
+  border: 1px red solid;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.freeBlock {
+  width: 46px;
+  height: 46px;
+  border: 1px #80008000 solid;
+}
+
+.freeBlockMove {
+  width: 46px;
+  height: 46px;
+  border: 1px gold solid;
+  background-color: #ffffff75;
+}
+
+.wallBlock{
+  width: 46px;
+  height: 46px;
+  border: 1px purple solid;
+  opacity: 0.60;
+  background-image: url(https://media.giphy.com/media/ESf2WYi744m7S/source.gif);
+}
+
+.weaponBlock1{
+  width: 46px;
+  height: 46px;
+  background-image: url("../src/weaponwindu.png");
+}
+
+.weaponBlock2{
+  width: 46px;
+  height: 46px;
+  background-image: url("../src/weapondarkvador.png");
+}
+.weaponBlock3{
+  width: 46px;
+  height: 46px;
+  background-image: url("../src/weaponobiwan.png");
+}
+
+.weaponBlock4{
+  width: 46px;
+  height: 46px;
+  background-image: url("../src/weaponyoda.png");
+}
+
+.player1Block{
+  width: 46px;
+  height: 45px;
+  border: 4px #ff0300 solid;
+}
+
+.weaponBlockP1{
+  width: 46px;
+  height: 45px;
+  background-image: url("../src/perso1.png");
+}
+
+.player2Block{
+  width: 46px;
+  height: 45px;
+  border: 4px #00bfff solid;
+}
+
+.weaponBlockP2{
+  width: 46px;
+  height: 45px;
+  background-image: url("../src/perso2.png");
+}
+
+.buttonNewMap {
+  margin-bottom: 10px;
+}
+.button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.player1
+{
+  font-size: 40px;
+  color: gold;
+}
+
+.player2
+{
+  font-size: 40px;
+  color: gold;
+}
+
+#game {
+  display: flex;
+  justify-content: space-around;
+}
+
+.windowInfo {
+  display: none;
+}
+
+.playersImage1{
+  overflow:hidden;
+  -webkit-border-radius:50px;
+  -moz-border-radius:50px;
+  border-radius:50px;
+  width:150px;
+  height:150px;
+  border: 3px #ff0300 solid;
+  margin-left: 5%;
+}
+
+.playersImage2{
+  overflow:hidden;
+  -webkit-border-radius:50px;
+  -moz-border-radius:50px;
+  border-radius:50px;
+  width:150px;
+  height:150px;
+  border: 3px #00bfff solid;
+  margin-left: 5%;
+}
+
+
+.imgWeapon01 {
+  background-image: url("../src/droïde.png");
+  width:150px;
+  height:150px;
+  background-size: 150px;
+}
+
+.imgWeapon02 {
+  background-image: url("../src/r2d2.png");
+  width:150px;
+  height:150px;
+  overflow: hidden;
+  background-size: 150px;
+}
+
+.imgWeapon1 {
+  background-image: url("../src/profilwindu.png");
+  background-size: 150px;
+}
+
+.imgWeapon2 {
+  background-image: url("../src/profildarkvador.png");
+  background-size: 150px;
+}
+
+.imgWeapon3 {
+  background-image: url("../src/profilobiwan.png");
+  background-size: 150px;
+}
+
+.imgWeapon4 {
+  background-image: url("../src/profilyoda.png");
+  background-size: 150px;
+}
+
+#infoGame{
+  margin-top: 3%;
+  text-align: center;
+  color: gold;
+  background-color: black;
+
+}
+
+#map {
+  justify-content: center;
+}
+
+#arena {
+  margin-top: 25%;
+}
+
+.attButton {
+  margin-right: 4%;
+}
+
+#text-info-p1 {
+  font-size: 14px;
+  color: white;
+}
+
+#text-info-p2 {
+  font-size: 14px
+}
+
+#congrat {
+  margin-top: 25%;
+  font-size: 30px;
+  color: gold;
+}
+
+.btn-primary, .btn-danger, .btn-primary:hover, .btn-danger:hover{
+  background-color: black;
+}
+
+.win {
+  text-align: center;
+}
+
+.img-win {
+  width: 50%;
+  opacity: 0.5;
+  border-radius: 25%;
+  border: 2px solid black;
+}

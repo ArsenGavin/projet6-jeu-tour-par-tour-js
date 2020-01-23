@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+  <head>
+      <meta charset="utf-8">
+      <title>Two Swords</title>
+      <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"/>
+      <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+
+  <body>
+      <div class="button">
+          <button id="buttonNewMap" class="btn btn-danger"
+          onclick='window.location.reload(false)'>Generate Map</button>
+          <br>
+          <button id="buttonPlay" class="btn btn-primary"
+          onclick="javascript:showInfo();">Play</button>
+      </div>
+      <div id="game">
+          <div id=windowPlayer1 class="windowInfo">
+              <div id="player1Info">
+                  <p class="player1"></p>
+                  <p class="player1Hp"></p>
+                  <p class='player1Damage'></p>
+                  <p class='player1Displacement'></p>
+                  <br><br>
+                  <img class='playersImage1 imgWeapon01'/>
+                  <br>
+                  <div id="text-info-p1"><br><br>
+                      <p>The Dark Side always begin.</p>
+                  </div>
+              </div>
+        </div>
+        <div id="map"></div>
+        <div id=windowPlayer2 class="windowInfo">
+            <div id="player2Info">
+                <p class="player2"></p>
+                <p class="player2Hp"></p>
+                <p class='player2Damage'></p>
+                <p class='player2Displacement'></p>
+                <br><br>
+                <img class='playersImage2 imgWeapon02'/>
+                <br>
+                <div id="text-info-p2"></div>
+            </div>
+        </div>
+      </div>
+      <p id="infoGame">If you want another Map, Click on Generate map. Ready to play ? Click on play !</p>
+
+
+      <script
+        src="https://code.jquery.com/jquery-3.4.1.slim.js"
+        integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="
+        crossorigin="anonymous"></script>
+      <script src="js/mapV2.js"></script>
+      <script src="js/players.js"></script>
+      <script src="js/weapons.js"></script>
+      <script src="js/action.js"></script>
+      <script src="js/fight.js"></script>
+      <script src="js/move.js"></script>
+
+  </body>
+
+</html>
